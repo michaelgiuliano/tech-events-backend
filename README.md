@@ -15,6 +15,29 @@ This repository is intentionally built as a portfolio project with production-mi
 
 Work in progress. The API and schema will evolve until the first stable release.
 
+## Prerequisites
+
+- **Java 21**
+- **Maven 4+** (or wrapper included)
+- **Docker** (running, required for Testcontainers PostgreSQL)
+
+## Build
+
+To build the project:
+
+```bash
+./mvnw clean package
+```
+This will compile the project and run all tests.
+
+## Run Tests
+Tests use Testcontainers to spin up PostgreSQL automatically. Make sure Docker is running:
+
+```bash
+./mvnw test
+```
+All tests are isolated and do not require a local database.
+
 ## Roadmap
 
 Implementation is tracked as a milestone-driven backlog (kept private while the project is under active development).
