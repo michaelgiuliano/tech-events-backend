@@ -4,6 +4,8 @@ Production-style **Spring Boot backend** for tech conferences: scheduling (DST-s
 
 This repository is intentionally built as a portfolio project with production-minded correctness (PostgreSQL constraints, concurrency-safe ticketing, strict time/DST handling).
 
+---
+
 ## Tech Stack
 
 - Java 21, Spring Boot 3.x (Web, Validation, Security, Data JPA)
@@ -38,6 +40,16 @@ Tests use Testcontainers to spin up PostgreSQL automatically. Make sure Docker i
 ```
 All tests are isolated and do not require a local database.
 
+## Run Locally
+The application is designed to run locally using environment variables and the dev profile.
+
+### 1. Environment variables
+Copy the example environment file and adjust values as needed:
+
+```bash
+cp .env.example .env
+```
+
 ## Roadmap
 
 Implementation is tracked as a milestone-driven backlog (kept private while the project is under active development).
@@ -45,3 +57,5 @@ Implementation is tracked as a milestone-driven backlog (kept private while the 
 ## License
 
 TBD.
+
+---

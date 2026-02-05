@@ -1,9 +1,18 @@
 spring:
+  application:
+    name: tech-events-backend
+  jpa:
+    open-in-view: false
   profiles:
     default: dev
 
 server:
   port: ${SERVER_PORT:8080}
+
+app:
+  security:
+    jwt:
+      secret: ${JWT_SECRET}
 
 logging:
   level:
